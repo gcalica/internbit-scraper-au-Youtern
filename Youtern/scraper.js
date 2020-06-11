@@ -17,14 +17,16 @@ const puppeteer = require('puppeteer');
 
   await browser.close();
 })();
+// can page.focus be used to focus on the buttons or the information I want to scrape?
 // learn how to work page.click
-// find how to do the proxy user and password login
+// find how to do the proxy user and password login --> await page.authenticate ({username: 'joel', password: 'browserless-rocks',})
+    // await page.setExtraHTTPHeaders ({'Proxy-Authorization': 'Basic username:passwrod', OR Authorization: 'Basic username:password',})
 // code together with jenny to figure out puppeteer
 // learn how to scrape the information off
 // does line 12 write to a json file?
 // how to test it with node in command
 
-// 1- click on sign in button
+// 1- click on sign in button --> in div class .login, a class .inline-act forgot-act, in img src='/imglib/sign_in.gif'
 // 2- use proxy to enter user and password
 // 3- click on sign in
 // 4- click on search internships button
