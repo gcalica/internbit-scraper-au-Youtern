@@ -11,6 +11,7 @@ const puppeteer = require('puppeteer');
   await page.evaluate(() => console.log('url is ${location.href}'));
   await page.json('youtern.data.json');  // node youtern.data.json
 
+  
   console.log('Job title:');
   console.log('Job location:');
   console.log('Job description:');
