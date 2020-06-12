@@ -2,44 +2,60 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 (async () => {
-  const browser = await puppeteer.launch({slowMo: 250, devtools: true}); // Slow down by 250 ms
-  const page = await browser.newPage();
-  await page.goto('https://www.youtern.com/');
-  // sign in process here
-  await page.click('#child-28338 li', '1');
+  try {
+    let browser = await puppeteer.launch({ slowMo: 250, devtools: true }); // Slow down by 250 ms
+    let page = await browser.newPage();
+    await page.goto('https://www.youtern.com/');
+    // sign in process here
+    //click sign in button
+    await page.waitForSelector('a[class="inline-act forgot-act"]');
+    await page.click('a[class="inline-act forgot-act"]');
+    await page.waitForSelector('input[id=email]');
+    await page.type('input[id=email]', 'ausui@hawaii.edu');
+    await page.waitForSelector('input[id=password]');
+    await page.type('input[id=password]', 'bball24');
+    await page.click('input[name="submit.commonLogin"]');
 
-  await page.waitForSelector('div.s-res');
+    await page.waitForSelector('a[class="linkSubMenu act"]');
+    await page.click('a[class="linkSubMenu act"]');
+    await page.click('input[name="submit.quickJobSearch"]');
+    await page.waitForSelector('div.s-res');
 
-  const jobs = await page.evaluate(() => {
-    let jobArray;
-    // the Nodes for the information I want
-    let titleNode = document.querySelectorAll('h3');
-    let locationNode = document.querySelectorAll('a');
-    let companyName = document.querySelectorAll('div.search-result-item-company-name');
-    let datePosted = document.querySelectorAll('span.search-result-item-post-date');
-    let descriptionList = document.querySelectorAll('div.search-result-item-description');
-    jobArray = [];
-    // Scrape the information ??
-    for (let i = 0; i < titleNode.length; i++) {
-      jobArray[i] = {
-        title: titleNode[i].innerHTML.trim(),
-        link: titleNode[i].getAttribute('href'),
-        location: locationNode[i].innerText.trim(),
-        company: companyName[i].innerText.trim(),
-        date: datePosted[i].innerText.trim(),
-        description: descriptionList[i].innerText.trim()
-      };
-    }
-    return jobArray;
-  });
-  await browser.close();
+    const jobs = await page.evaluate(() => {
+      let jobArray;
+      // the Nodes for the information I want
+      let titleNode = document.querySelectorAll('h3');
+      let locationNode = document.querySelectorAll('a');
+      let companyName = document.querySelectorAll('div.search-result-item-company-name');
+      let datePosted = document.querySelectorAll('span.search-result-item-post-date');
+      let descriptionList = document.querySelectorAll('div.search-result-item-description');
+      jobArray = [];
+      // Scrape the information ??
+      for (let i = 0; i < titleNode.length; i++) {
+        jobArray[i] = {
+          title: titleNode[i].innerHTML.trim(),
+          link: titleNode[i].getAttribute('href'),
+          location: locationNode[i].innerText.trim(),
+          company: companyName[i].innerText.trim(),
+          date: datePosted[i].innerText.trim(),
+          description: descriptionList[i].innerText.trim()
+        };
+      }
+      return jobArray;
+    });
+    await browser.close();
     // write json file
     fs.writeFile('yt.data.json', JSON.stringify(jobs), function (err) {
       if (err) throw err;
       console.log('Your info has been written into JSON file');
     });
 
-  console.log('Process Completed');
+    console.log('Process Completed');
+  } catch (err) {
+    console.log(error(err));
+    await browser.close();
+    console.log(error("Browser closed"));
+  }
 })();
 // can page.focus be used to focus on the buttons or the information I want to scrape?
 // learn how to work page.click
@@ -50,7 +66,7 @@ const fs = require('fs');
 // how to test it with node in command
 
 // 1- click on sign in button --> in div class .login, a class .inline-act forgot-act, in img src='/imglib/sign_in.gif'
-// 2- use proxy to enter user and password
+// 2- use proxy to enter user and password --> INPUT U: class='txt' id='email', P: id='password'
 // 3- click on sign in
 // 4- click on search internships button
 // 5- click on search button on right column
