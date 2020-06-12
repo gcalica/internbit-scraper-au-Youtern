@@ -53,5 +53,5 @@ const fs = require('fs');
 // 2- use proxy to enter user and password
 // 3- click on sign in
 // 4- click on search internships button
-// 5- fill out internship search choices OR go type keyword into quick search and location
-// 6- click search button
+// 5- click on search button on right column
+// 6- evaluate the internships
