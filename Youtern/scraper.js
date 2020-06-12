@@ -6,6 +6,7 @@ const fs = require('fs');
   const page = await browser.newPage();
   await page.goto('https://www.youtern.com/');
   // sign in process here
+  await page.click('#child-28338 li', '1');
 
   await page.waitForSelector('div.s-res');
 
@@ -37,11 +38,8 @@ const fs = require('fs');
       if (err) throw err;
       console.log('Your info has been written into JSON file');
     });
-  // insert login proxy here
-  await page.click('#child-28338 li', '1');
 
   console.log('Process Completed');
-
 })();
 // can page.focus be used to focus on the buttons or the information I want to scrape?
 // learn how to work page.click
