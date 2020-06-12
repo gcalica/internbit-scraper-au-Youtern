@@ -4,14 +4,35 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({slowMo: 250, devtools: true}); // Slow down by 250 ms
   const page = await browser.newPage();
   await page.goto('https://www.youtern.com/');
+  await page.waitForSelector('div.s-res');
 
-  page.on('console', msg => console.log('PAGE LOG', msg.text()));
+  const jobs = await page.evaluate(() => {
+    let jobArray;
+    let titleNode = document.querySelectorAll('h3');
+    let location = document.querySelectorAll('a');
+    let company = document.querySelectorAll('div.search-result-item-company-name');
+    let datePosted = document.querySelectorAll('span.search-result-item-post-date');
+    let description = document.querySelectorAll('div.search-result-item-description');
+    jobArray = [];
+    // Scrape the information ??
+    for (let i = 0; i < titleNode.length; i++) {
+      jobArray[i] = {
+        title: titleNode[i].innerHTML.trim(),
+        link: titleNode[i].getAttribute('href'),
+        location: location[i].innerText.trim(),
+        company: company[i].innerText.trim(),
+        datePosted: datePosted[i].innerText.trim(),
+        description: description[i].innerText.trim()
+      };
+    }
+    return jobArray;
+  });
 // insert login proxy here
   await page.click('#child-28338 li', '1');
   await page.evaluate(() => console.log('url is ${location.href}'));
   await page.json('youtern.data.json');  // node youtern.data.json
 
-  
+
   console.log('Job title:');
   console.log('Job location:');
   console.log('Job description:');
@@ -23,7 +44,6 @@ const puppeteer = require('puppeteer');
 // find how to do the proxy user and password login --> await page.authenticate ({username: 'joel', password: 'browserless-rocks',})
     // await page.setExtraHTTPHeaders ({'Proxy-Authorization': 'Basic username:passwrod', OR Authorization: 'Basic username:password',})
 // code together with jenny to figure out puppeteer
-// learn how to scrape the information off
 // does line 12 write to a json file?
 // how to test it with node in command
 
