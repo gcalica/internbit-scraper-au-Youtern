@@ -1,43 +1,47 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 (async () => {
   const browser = await puppeteer.launch({slowMo: 250, devtools: true}); // Slow down by 250 ms
   const page = await browser.newPage();
   await page.goto('https://www.youtern.com/');
+  // sign in process here
+
   await page.waitForSelector('div.s-res');
 
   const jobs = await page.evaluate(() => {
     let jobArray;
+    // the Nodes for the information I want
     let titleNode = document.querySelectorAll('h3');
-    let location = document.querySelectorAll('a');
-    let company = document.querySelectorAll('div.search-result-item-company-name');
+    let locationNode = document.querySelectorAll('a');
+    let companyName = document.querySelectorAll('div.search-result-item-company-name');
     let datePosted = document.querySelectorAll('span.search-result-item-post-date');
-    let description = document.querySelectorAll('div.search-result-item-description');
+    let descriptionList = document.querySelectorAll('div.search-result-item-description');
     jobArray = [];
     // Scrape the information ??
     for (let i = 0; i < titleNode.length; i++) {
       jobArray[i] = {
         title: titleNode[i].innerHTML.trim(),
         link: titleNode[i].getAttribute('href'),
-        location: location[i].innerText.trim(),
-        company: company[i].innerText.trim(),
-        datePosted: datePosted[i].innerText.trim(),
-        description: description[i].innerText.trim()
+        location: locationNode[i].innerText.trim(),
+        company: companyName[i].innerText.trim(),
+        date: datePosted[i].innerText.trim(),
+        description: descriptionList[i].innerText.trim()
       };
     }
     return jobArray;
   });
-// insert login proxy here
-  await page.click('#child-28338 li', '1');
-  await page.evaluate(() => console.log('url is ${location.href}'));
-  await page.json('youtern.data.json');  // node youtern.data.json
-
-
-  console.log('Job title:');
-  console.log('Job location:');
-  console.log('Job description:');
-
   await browser.close();
+    // write json file
+    fs.writeFile('yt.data.json', JSON.stringify(jobs), function (err) {
+      if (err) throw err;
+      console.log('Your info has been written into JSON file');
+    });
+  // insert login proxy here
+  await page.click('#child-28338 li', '1');
+
+  console.log('Process Completed');
+
 })();
 // can page.focus be used to focus on the buttons or the information I want to scrape?
 // learn how to work page.click
