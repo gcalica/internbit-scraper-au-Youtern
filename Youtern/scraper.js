@@ -16,8 +16,14 @@ const fs = require('fs');
     await page.type('input[id=password]', 'bball24');
     await page.click('input[name="submit.commonLogin"]');
 
-    await page.waitForSelector('a[class="linkSubMenu act"]');
-    await page.click('a[class="linkSubMenu act"]');
+    try {
+      await page.waitForSelector('a[class="act"]');
+      await page.click('a[class="act"]');
+    } catch (e) {
+      console.log(e);
+    }
+
+    await page.waitForSelector('div.flineQbox');
     await page.click('input[name="submit.quickJobSearch"]');
     await page.waitForSelector('div.s-res');
 
