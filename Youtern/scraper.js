@@ -16,16 +16,12 @@ const fs = require('fs');
     await page.type('input[id=password]', 'bball24');
     await page.click('input[name="submit.commonLogin"]');
 
-    try {
-      await page.waitForSelector('a[class="act"]');
-      await page.click('a[class="act"]');
-    } catch (e) {
-      console.log(e);
-    }
+    // Go to search internship page
+    await page.goto('https://www.youtern.com/cm/candidate/search_jobs');
 
     await page.waitForSelector('div.flineQbox');
-    await page.click('input[name="submit.quickJobSearch"]');
-    await page.waitForSelector('div.s-res');
+    await page.click('input[id=pngFix]');
+    await page.waitForSelector('div[class="s-res"]');
 
     const jobs = await page.evaluate(() => {
       let jobArray;
@@ -58,7 +54,7 @@ const fs = require('fs');
 
     console.log('Process Completed');
   } catch (err) {
-    console.log(error(err));
+    console.log(err);
     await browser.close();
     console.log(error("Browser closed"));
   }
