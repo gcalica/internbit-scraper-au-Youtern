@@ -17,17 +17,18 @@ const fs = require('fs');
     await page.click('input[name="submit.commonLogin"]');
 
     // Go to search internship page
+    await page.waitFor(2000);
     await page.goto('https://www.youtern.com/cm/candidate/search_jobs');
 
     await page.waitForSelector('div.flineQbox');
     await page.click('input[id=pngFix]');
-    await page.waitForSelector('div[class="popup-cent"]');
+    await page.waitForSelector('div[class="s-res"]');
 
     const jobs = await page.evaluate(() => {
       let jobArray;
       // the Nodes for the information I want
-      let titleNode = document.querySelectorAll('a[@href]');
-      let locationNode = document.querySelectorAll('a');
+      let titleNode = document.querySelectorAll('div.s-res b');
+      let locationNode = document.querySelectorAll('div.search-result-item-company-name a');
       let companyName = document.querySelectorAll('div[class=search-result-item-company-name]');
       let datePosted = document.querySelectorAll('span[class=search-result-item-post-date]');
       let descriptionList = document.querySelectorAll('div[class=search-result-item-description]');
