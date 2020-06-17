@@ -26,8 +26,7 @@ const fs = require('fs');
     const jobs = await page.evaluate(() => {
       let jobArray;
       // the Nodes for the information I want
-      let titleNode = document.querySelectorAll('b');
-      let linkNode = document.querySelectorAll('a@href');
+      let titleNode = document.querySelectorAll('a[@href]');
       let locationNode = document.querySelectorAll('a');
       let companyName = document.querySelectorAll('div[class=search-result-item-company-name]');
       let datePosted = document.querySelectorAll('span[class=search-result-item-post-date]');
@@ -37,7 +36,7 @@ const fs = require('fs');
       for (let i = 0; i < titleNode.length; i++) {
         jobArray[i] = {
           title: titleNode[i].innerHTML.trim(),
-          link: linkNode[i].getAttribute('href'),
+          link: titleNode[i].getAttribute('href'),
           location: locationNode[i].innerText.trim(),
           company: companyName[i].innerText.trim(),
           date: datePosted[i].innerText.trim(),
