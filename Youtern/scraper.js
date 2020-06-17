@@ -21,22 +21,23 @@ const fs = require('fs');
 
     await page.waitForSelector('div.flineQbox');
     await page.click('input[id=pngFix]');
-    await page.waitForSelector('div[class="s-res"]');
+    await page.waitForSelector('div[class="popup-cent"]');
 
     const jobs = await page.evaluate(() => {
       let jobArray;
       // the Nodes for the information I want
-      let titleNode = document.querySelectorAll('h3');
+      let titleNode = document.querySelectorAll('b');
+      let linkNode = document.querySelectorAll('a@href');
       let locationNode = document.querySelectorAll('a');
-      let companyName = document.querySelectorAll('div.search-result-item-company-name');
-      let datePosted = document.querySelectorAll('span.search-result-item-post-date');
-      let descriptionList = document.querySelectorAll('div.search-result-item-description');
+      let companyName = document.querySelectorAll('div[class=search-result-item-company-name]');
+      let datePosted = document.querySelectorAll('span[class=search-result-item-post-date]');
+      let descriptionList = document.querySelectorAll('div[class=search-result-item-description]');
       jobArray = [];
       // Scrape the information ??
       for (let i = 0; i < titleNode.length; i++) {
         jobArray[i] = {
           title: titleNode[i].innerHTML.trim(),
-          link: titleNode[i].getAttribute('href'),
+          link: linkNode[i].getAttribute('href'),
           location: locationNode[i].innerText.trim(),
           company: companyName[i].innerText.trim(),
           date: datePosted[i].innerText.trim(),
