@@ -28,6 +28,7 @@ const fs = require('fs');
       let jobArray;
       // the Nodes for the information I want
       let titleNode = document.querySelectorAll('div.s-res b');
+      let linkNode = document.querySelectorAll('div.s-res a');
       let locationNode = document.querySelectorAll('div.search-result-item-company-name a');
       let companyName = document.querySelectorAll('div[class=search-result-item-company-name]');
       let datePosted = document.querySelectorAll('span[class=search-result-item-post-date]');
@@ -37,7 +38,7 @@ const fs = require('fs');
       for (let i = 0; i < titleNode.length; i++) {
         jobArray[i] = {
           title: titleNode[i].innerHTML.trim(),
-          link: titleNode[i].getAttribute('href'),
+          link: linkNode[i].getAttribute('href'),
           location: locationNode[i].innerText.trim(),
           company: companyName[i].innerText.trim(),
           date: datePosted[i].innerText.trim(),
@@ -48,7 +49,7 @@ const fs = require('fs');
     });
     await browser.close();
     // write json file
-    fs.writeFile('yt.data.json', JSON.stringify(jobs), function (err) {
+    fs.writeFile('youtern.data.json', JSON.stringify(jobs), function (err) {
       if (err) throw err;
       console.log('Your info has been written into JSON file');
     });
