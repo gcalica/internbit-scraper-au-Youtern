@@ -13,4 +13,6 @@ node scraper.js
 This will go through the website and find all the available jobs on the website.  
 
 ## JSON Files
+This is the link to my current json file for Youtern.  This is what you should get when you run the script.
+
 - [Youtern](https://github.com/radgrad/internbit-scraper-au-Youtern/blob/master/Youtern/youtern.canonical.data.json)
