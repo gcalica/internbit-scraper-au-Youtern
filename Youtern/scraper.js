@@ -36,14 +36,14 @@ const fs = require('fs');
       jobArray = [];
       // Scrape the information ??
       for (let i = 0; i < titleNode.length; i++) {
-        jobArray[i] = {
+        jobArray.push({
           position: titleNode[i].innerHTML.trim(),
           URL: linkNode[i].getAttribute('href'),
           location: locationNode[i].innerText.trim(),
           company: companyName[i].innerText.trim(),
           postDate: datePosted[i].innerText.trim(),
           description: descriptionList[i].innerText.trim()
-        };
+        });
       }
       return jobArray;
     });
