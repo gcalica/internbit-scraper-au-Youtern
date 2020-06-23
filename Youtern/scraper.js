@@ -37,11 +37,11 @@ const fs = require('fs');
       // Scrape the information ??
       for (let i = 0; i < titleNode.length; i++) {
         jobArray[i] = {
-          title: titleNode[i].innerHTML.trim(),
-          link: linkNode[i].getAttribute('href'),
+          position: titleNode[i].innerHTML.trim(),
+          URL: linkNode[i].getAttribute('href'),
           location: locationNode[i].innerText.trim(),
           company: companyName[i].innerText.trim(),
-          date: datePosted[i].innerText.trim(),
+          postDate: datePosted[i].innerText.trim(),
           description: descriptionList[i].innerText.trim()
         };
       }
@@ -49,7 +49,7 @@ const fs = require('fs');
     });
     await browser.close();
     // write json file
-    fs.writeFile('youtern.data.json', JSON.stringify(jobs), function (err) {
+    fs.writeFile('youtern.canonical.data.json', JSON.stringify(jobs), function (err) {
       if (err) throw err;
       console.log('Your info has been written into JSON file');
     });
