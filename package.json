@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "youtern": "node scraper.js",
-    "lint": "eslint --quiet --ext .js .",
+    "lint": "Youtern/node_modules/.bin/eslint --quiet --ext .js .",
     "scraper": "node mocha -r esm scraper.js"
   },
   "engines": {
