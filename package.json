@@ -6,7 +6,8 @@
   "repository": "https://github.com/radgrad/internbit-scraper-au-Youtern",
   "main": "index.js",
   "scripts": {
-    "youtern": "node scraper.js",
+    "youtern": "node youtern.js",
+    "coolworks": "node coolworks.js",
     "lint": "Youtern/node_modules/.bin/eslint --quiet --ext .js .",
     "scraper": "node mocha -r esm scraper.js"
   },
