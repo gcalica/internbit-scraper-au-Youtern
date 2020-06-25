@@ -5,11 +5,11 @@ const x = Xray();
 x('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&commit=Search&search%5Bfields_to_search%5D=job_title', {
   jobs: x('.job-post-row', [{
     info: x('.holder', [{
-      datePosted: '.time',
+      posted: '.time',
       description: x('.text', 'p'),
       main: x('.top-meta', [{
         position: 'h4',
-        URL: 'a@href',
+        url: 'a@href',
         company: 'h5',
         location: '.location',
       }]),
@@ -20,7 +20,7 @@ x('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&commit=
       description: x('.text', '.blurb'),
       main: x('.top-meta', [{
         position: 'h4',
-        URL: 'a@href',
+        url: 'a@href',
         company: '.ttl',
         location: '.location',
       }]),
