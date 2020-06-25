@@ -38,10 +38,10 @@ const fs = require('fs');
       for (let i = 0; i < titleNode.length; i++) {
         jobArray.push({
           position: titleNode[i].innerHTML.trim(),
-          URL: linkNode[i].getAttribute('href'),
+          url: linkNode[i].getAttribute('href'),
           location: locationNode[i].innerText.trim(),
           company: companyName[i].innerText.trim(),
-          postDate: datePosted[i].innerText.trim(),
+          posted: datePosted[i].innerText.trim(),
           description: descriptionList[i].innerText.trim()
         });
       }
