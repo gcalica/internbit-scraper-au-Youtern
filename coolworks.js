@@ -1,7 +1,6 @@
 const Xray = require('x-ray');
 
 const x = Xray();
-// look up paginate
 x('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&commit=Search&search%5Bfields_to_search%5D=job_title', {
   jobs: x('.job-post-row', [{
     info: x('.holder', [{
