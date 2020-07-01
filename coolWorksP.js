@@ -5,6 +5,68 @@ function removeDuplicates(skills) {
   return [...new Set(skills)];
 }
 
+async function getLinks(page) {
+  const links = await page.evaluate(
+      () => {
+        return Array.from(
+            // eslint-disable-next-line no-undef
+            document.querySelectorAll('div[class=top-meta] a'),
+            a => a.getAttribute('href'),
+        );
+      },
+  );
+  return links;
+}
+
+async function goIntoLink(page) {
+  let details = [];
+  let start;
+  let contact;
+  let compensation;
+  let qualifications;
+  let description;
+
+  await page.click('div[class=top-meta] a');
+
+  start = await fetchInfo(page, 'dl[class=other-details] dd');
+  if (start.length === 0) {
+    start = 'N/A';
+  }
+  contact = await fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
+  if (contact.length === 0) {
+    contact = await fetchInfo(page, 'ul[class=contact-list] li[class=phone]');
+    if (contact.length === 0) {
+      contact = 'N/A';
+    }
+  }
+  compensation = await fetchInfo(page, 'div[class=benefits]');
+  if (compensation.length === 0) {
+    compensation = 'N/A';
+  }
+  qualifications = await fetchInfo(page, 'div[class=employee_expectations] p');
+  if (qualifications.length === 0) {
+    qualifications = 'N/A';
+  }
+  description = await fetchInfo(page, 'div[class=employee-experience] p');
+  if (description.length === 0) {
+    description = await fetchInfo(page, 'div[class=general_description] p');
+    if (description.length === 0) {
+      description = 'N/A';
+    }
+  }
+
+  details.push({
+    start: start,
+    contact: contact,
+    compensation: compensation,
+    qualifications: qualifications,
+    description: description
+  });
+  await page.goBack();
+  return details;
+}
+
+
 async function fetchInfo(page, selector) {
   let result = '';
   try {
@@ -23,53 +85,63 @@ async function fetchInfo(page, selector) {
     const jobs = [];
     let JobsScraped = 0;
 
-    let browser = await puppeteer.launch({ slowMo: 250, devtools: true }); // Slow down by 250 ms
-    let page = await browser.newPage();
-    await page.goto('https://www.coolworks.com/find-a-job');
+    try {
+      let browser = await puppeteer.launch({ slowMo: 250, devtools: true }); // Slow down by 250 ms
+      let page = await browser.newPage();
+      await page.goto('https://www.coolworks.com/find-a-job');
 
-    // search technology jobs
-    await page.waitForSelector('input[id="search_keywords"]');
-    await page.type('input[id=search_keywords]', 'computer');
-    await page.click('div[class="search-submit"]');
-
+      // search technology jobs
+      await page.waitForSelector('input[id="search_keywords"]');
+      // change this text for what you want to search
+      await page.type('input[id=search_keywords]', 'computer');
+      await page.click('div[class="search-submit"]');
+    } catch (errb) {
+      console.log('Error with browser', errb.message);
+    }
     // Go to search internship page
-    await page.waitFor(2000);
-    await page.waitForSelector('div.holder same-height-left');
-
+    await page.waitFor(3000);
     // Scrape information
     try {
-      const url = await fetchInfo(page, 'div.top-meta a').getAttribute('href');
-      let start;
-      let contact;
-      let compensation;
-      let qualifications;
-      let description;
-      while (url !== null) {
-        await page.goto(url);
+      const url = await getLinks(page);
+      // let start;
+      // let contact;
+      // let compensation;
+      // let qualifications;
+      // let description;
+      const details = await goIntoLink(page, url);
+        // if (url != null) {
+        //   await page.click('div[class=top-meta] a');
+        //
+        //   start = await fetchInfo(page, 'dl[class=other-details] dd');
+        //   if (start.length === 0) {
+        //     start = 'N/A';
+        //   }
+        //   contact = await fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
+        //   if (contact.length === 0) {
+        //     contact = await fetchInfo(page, 'ul[class=contact-list] li[class=phone]');
+        //     if (contact.length === 0) {
+        //       contact = 'N/A';
+        //     }
+        //   }
+        //   compensation = await fetchInfo(page, 'div[class=benefits]');
+        //   if (compensation.length === 0) {
+        //     compensation = 'N/A';
+        //   }
+        //   qualifications = await fetchInfo(page, 'div[class=employee_expectations] p');
+        //   if (qualifications.length === 0) {
+        //     qualifications = 'N/A';
+        //   }
+        //   description = await fetchInfo(page, 'div[class=employee-experience] p');
+        //   if (description.length === 0) {
+        //     description = await fetchInfo(page, 'div[class=general_description] p');
+        //     if (description.length === 0) {
+        //       description = 'N/A';
+        //     }
+        //   }
+        //
+        //   await page.close();
+        // }
 
-        start = await fetchInfo(page, 'dl[class=other-details] dd');
-        if (start.length === 0) {
-          start = 'N/A';
-        }
-        contact = await fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
-        if (contact.length === 0) {
-          contact = await fetchInfo(page, 'ul[class=contact-list] li[class=phone]')
-        }
-        compensation = await fetchInfo(page, 'div[class=benefits]');
-        if (compensation.length === 0) {
-          compensation = 'N/A';
-        }
-        qualifications = await fetchInfo(page, 'div[class=employee_expectations] p');
-        if (qualifications.length === 0) {
-          qualifications = 'N/A';
-        }
-        description = await fetchInfo(page, 'div[class=general_description] p');
-        if (description.length === 0) {
-          description = 'N/A';
-        }
-
-        await page.goBack();
-      }
       const position = await fetchInfo(page, 'div.top-meta h4');
       const company = await fetchInfo(page, 'div.top-meta h5');
       const location = await fetchInfo(page, 'p[class=locations] a');
@@ -100,18 +172,19 @@ async function fetchInfo(page, selector) {
       jobs.push ({
         position: position,
         company: company,
-        contact: contact,
+        // contact: contact,
         location: location,
         posted: posted,
-        compensation: compensation,
-        qualifications: qualifications,
+        // compensation: compensation,
+        // qualifications: qualifications,
         url: url,
         lastScraped: lastScraped,
-        description: description,
+        details: details,
+        // description: description,
       });
       JobsScraped++;
     } catch (err) {
-      console.log('Error with getting information');
+      console.log('Error with getting information', err.message);
       await browser.close();
     }
     // const jobs = await page.evaluate(() => {
@@ -139,9 +212,9 @@ async function fetchInfo(page, selector) {
     // });
 
     // write json file
-    fs.writeFile('youtern.canonical.data.json', JSON.stringify(jobs), function (e) {
+    fs.writeFile('coolworks.canonical.data.json', JSON.stringify(jobs), function (e) {
       if (e) throw e;
-      console.log('Your info has been written into the youter.canonical.data.JSON file');
+      console.log('Your info has been written into the coolworks.canonical.data.JSON file');
     });
     console.log('Total Jobs Scraped: ', JobsScraped);
     console.log('Process Completed');
