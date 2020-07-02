@@ -18,6 +18,26 @@ async function fetchInfo(page, selector) {
   return result;
 }
 
+async function getLink(page, url) {
+  await page.goto(url);
+  await page.waitForNavigation();
+  let details = await page.evaluate(() => {
+    let contact = fetchInfo(page,'ul[class=contact-list] li');
+    let compensation = fetchInfo(page, 'div[class=benefits]');
+    let qualifications = fetchInfo(page, 'div[class=employee_expectations] p');
+    let description = fetchInfo(page, 'div[class=employee-experience] p');
+
+    return {contact, compensation, description, qualifications};
+  });
+return details;
+}
+
+async function addBase(url) {
+  let Base = 'https://www.coolworks.com';
+  let link = Base + url;
+  return link;
+}
+
 (async () => {
   try {
     const jobs = [];
@@ -46,11 +66,11 @@ async function fetchInfo(page, selector) {
       let company;
       let location;
       let posted;
-      let skills = '';
+      // let skills = '';
       let lastScraped;
+      let starting = 'https://www.coolworks.com';
 
         let jobInfo = await page.evaluate(() => {
-          let starting = 'https://www.coolworks.com';
           let section = document.querySelector('.holder');
           let cards = Array.from(section.children);
 
@@ -61,31 +81,32 @@ async function fetchInfo(page, selector) {
             posted = list.querySelector('div[class=link-job] span');
             lastScraped = new Date();
             url = list.getAttribute('href');
-            url = starting + url;
             return {position, company, location, posted, lastScraped, url};
           });
           return info;
-          console.log(info);
         });
 
 
-      console.log(url);
+        for (let job of jobInfo) {
+          let link = await addBase(jobInfo["url"]);
+          let other = await getLink(page, link);
+          jobInfo["extra"] = other;
+          jobInfo["url"] = link;
 
-      // go to each individual URL
-      await page.goto(url);
-      await page.waitForNavigation();
+          jobs.push ({
+            // position: position,
+            // company: company,
+            // location: location,
+            // posted: posted,
+            // url: url,
+            // lastScraped: lastScraped,
+            main: jobInfo,
+            // description: description,
+            // compensation: compensation,
+            // qualifications: qualifications,
+            // contact: contact,
 
-        contact = fetchInfo(page,'ul[class=contact-list] li');
-      await page.waitFor(3000);
-
-      compensation = fetchInfo(page, 'div[class=benefits]');
-      await page.waitFor(3000);
-
-      qualifications = fetchInfo(page, 'div[class=employee_expectations] p');
-      await page.waitFor(3000);
-
-      description = fetchInfo(page, 'div[class=employee-experience] p');
-      await page.waitFor(3000);
+          });        }
 
       // skills = page.evaluate(
       //     () => Array.from(
@@ -99,10 +120,7 @@ async function fetchInfo(page, selector) {
       //   skills = removeDuplicates(skills);
       // }
 
-      // go back to main page
-      await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=computer&commit=Search');
-      await page.waitFor(3000);
-      //
+
       // const position = await fetchInfo(page, 'div.top-meta h4');
       // const company = await fetchInfo(page, 'div.top-meta h5');
       // const location = await fetchInfo(page, 'p[class=locations] a');
@@ -113,20 +131,20 @@ async function fetchInfo(page, selector) {
       // const lastScraped = new Date();
 
       // push items onto array
-      jobs.push ({
-        // position: position,
-        // company: company,
-        // location: location,
-        // posted: posted,
-        // url: url,
-        // lastScraped: lastScraped,
-        main: jobInfo,
-        description: description,
-        compensation: compensation,
-        qualifications: qualifications,
-        contact: contact,
-
-      });
+      // jobs.push ({
+      //   // position: position,
+      //   // company: company,
+      //   // location: location,
+      //   // posted: posted,
+      //   // url: url,
+      //   // lastScraped: lastScraped,
+      //   main: jobInfo,
+      //   description: description,
+      //   compensation: compensation,
+      //   qualifications: qualifications,
+      //   contact: contact,
+      //
+      // });
       JobsScraped++;
     } catch (err) {
       console.log('Error with getting information', err.message);
