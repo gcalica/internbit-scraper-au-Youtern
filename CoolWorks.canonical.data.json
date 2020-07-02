@@ -1,1 +1,4202 @@
-[]
+[
+{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 14, 2020",
+          "main": [
+            {
+              "position": "Night Audit Associate",
+              "url": "https://www.coolworks.com/the-ranch-at-rock-creek/highlighted-job/37118-night-audit-associate",
+              "company": "The Ranch at Rock Creek",
+              "location": "Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 29, 2020",
+          "main": [
+            {
+              "position": "Front Office Supervisor",
+              "url": "https://www.coolworks.com/the-wilson-hotel-residence-inn-big-sky/highlighted-job/37263-front-office-supervisor",
+              "company": "The Wilson Hotel - Residence Inn Big Sky",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 10, 2020",
+          "main": [
+            {
+              "position": "Housekeeping Manager",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37085-live-your-passion-add-your-magic",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 06, 2020",
+          "main": [
+            {
+              "position": "Campground Host",
+              "url": "https://www.coolworks.com/signal-mountain-lodge/highlighted-job/37053-live-and-work-in-one-of-the-most-scenic-campground",
+              "company": "Signal Mountain Lodge",
+              "location": "Moran, Wyoming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "posted": "Jun 25, 2020",
+          "main": [
+            {
+              "position": "Line Cooks",
+              "url": "https://www.coolworks.com/spanish-peaks-mountain-club/highlighted-job/37235-line-cooks-3",
+              "company": "Spanish Peaks Mountain Club",
+              "location": "Big Sky, Montana"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Hotel Maintenance",
+              "url": "https://www.coolworks.com/the-harborside-inn/highlighted-job/37216-hotel-maintenance",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 30, 2020",
+          "main": [
+            {
+              "position": "Spa Therapist",
+              "url": "https://www.coolworks.com/gage-hotel/highlighted-job/37201-spa-therapist",
+              "company": "Gage Hotel",
+              "location": "Marathon, Texas"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 21, 2020",
+          "main": [
+            {
+              "position": "Alternate - Wrangler/Server/Housekeeping/Office/Dish",
+              "url": "https://www.coolworks.com/covered-wagon-ranch/highlighted-job/37182-alternate-wrangler-slash-server-slash-housekeeping",
+              "company": "Covered Wagon Ranch",
+              "location": "Montana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "jobs": [
+    {
+      "info": [
+        {
+          "posted": "Jun 24, 2020",
+          "main": [
+            {
+              "position": "Housekeeping, Pool Attendants, Night Auditor, Front Desk, Bellhop",
+              "url": "https://www.coolworks.com/the-harborside-inn/help-wanted/37215-housekeeping-pool-attendants-night-auditor-front-d",
+              "company": "The Harborside Inn",
+              "location": "Edgartown, Massachusetts"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 03, 2020",
+          "main": [
+            {
+              "position": "Assistant Front Desk Manager",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37019-assistant-front-desk-manager-needed-near-yosemite-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jul 01, 2020",
+          "main": [
+            {
+              "position": "Retail Clerk",
+              "url": "https://www.coolworks.com/evergreen-lodge/highlighted-job/37281-retail-clerk-1",
+              "company": "Evergreen Lodge & Rush Creek Lodge",
+              "location": "Groveland, California"
+            }
+          ]
+        },
+        {
+          "posted": "Jun 18, 2020",
+          "main": [
+            {
+              "position": "Innkeeper",
+              "url": "https://www.coolworks.com/red-wing-motel/highlighted-job/37161-innkeeper",
+              "company": "Red Wing Motel",
+              "location": "Manitou Springs, Colorado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

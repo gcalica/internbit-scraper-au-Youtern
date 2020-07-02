@@ -1,27 +1,17 @@
 const Xray = require('x-ray');
 
+let website;
 const x = Xray();
-x('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&commit=Search&search%5Bfields_to_search%5D=job_title', {
+x('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=computer&commit=Search', {
   jobs: x('.job-post-row', [{
     info: x('.holder', [{
       posted: '.time',
-      description: x('.text', 'p'),
       main: x('.top-meta', [{
         position: 'h4',
         url: 'a@href',
         company: 'h5',
         location: '.location',
-      }]),
-    }]),
-  }]),
-  jobs2: x('.profiles-row', [{
-    info: x('.holder', [{
-      description: x('.text', '.blurb'),
-      main: x('.top-meta', [{
-        position: 'h4',
-        url: 'a@href',
-        company: '.ttl',
-        location: '.location',
+        description: x()
       }]),
     }]),
   }]),
@@ -30,3 +20,4 @@ x('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&commit=
   console.log(err, obj);
 }).paginate('.paging a@href')
     .write('CoolWorks.canonical.data.json');
+

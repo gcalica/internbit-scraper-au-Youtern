@@ -22,41 +22,48 @@ const fs = require('fs');
 
     await page.waitForSelector('div.flineQbox');
     await page.click('input[id=pngFix]');
-    await page.waitForSelector('div[class="s-res"]');
+    await page.waitForSelector('div.left');
 
-    const jobs = await page.evaluate(() => {
-      let jobArray;
-      // the Nodes for the information I want
-      let titleNode = document.querySelectorAll('div.s-res b');
-      let linkNode = document.querySelectorAll('div.s-res a');
-      let locationNode = document.querySelectorAll('div.search-result-item-company-name a');
-      let companyName = document.querySelectorAll('div[class=search-result-item-company-name]');
-      let datePosted = document.querySelectorAll('span[class=search-result-item-post-date]');
-      let descriptionList = document.querySelectorAll('div[class=search-result-item-description]');
-      jobArray = [];
-      // Scrape the information ??
-      for (let i = 0; i < titleNode.length; i++) {
-        jobArray.push({
-          position: titleNode[i].innerHTML.trim(),
-          url: linkNode[i].getAttribute('href'),
-          location: locationNode[i].innerText.trim(),
-          company: companyName[i].innerText.trim(),
-          posted: datePosted[i].innerText.trim(),
-          description: descriptionList[i].innerText.trim()
-        });
-      }
-      return jobArray;
-    });
-    await browser.close();
+      let jobs = await page.evaluate(() => {
+        let jobArray;
+        // the Nodes for the information I want
+        let titleNode = page.$$('div.s-res b');
+        let linkNode = page.$$('div.s-res a');
+        let locationNode = page.$$('div.search-result-item-company-name a');
+        let companyName = page.$$('div[class=search-result-item-company-name]');
+        let datePosted = page.$$('span[class=search-result-item-post-date]');
+        // click on link
+        // let compensationNode = document.querySelectorAll('tbody td:6th-of-type(2)');
+        // let startNode = document.querySelectorAll('tbody td:10th-of-type(2)');
+        // let qualificationNode = document.querySelectorAll('ul li');
+        // let descriptionList = document.querySelectorAll('p[dir=ltr] span');
+        // page.waitFor(5000);
+        jobArray = [];
+
+        // Scrape the information
+        for (let i = 0; i < titleNode.length; i++) {
+          jobArray.push({
+            position: titleNode[i].innerHTML.trim(),
+            url: linkNode[i].getAttribute('href'),
+            location: locationNode[i].innerText.trim(),
+            company: companyName[i].innerText.trim(),
+            posted: datePosted[i].innerText.trim(),
+            // compensation: compensationNode[i].innerText.trim(),
+            // qualifications: qualificationNode[i].innerText.trim(),
+            // description: descriptionList[i].innerText.trim(),
+          });
+        }
+        return jobArray;
+      });
     // write json file
-    fs.writeFile('youtern.canonical.data.json', JSON.stringify(jobs), function (err) {
+    fs.writeFile('youtern.canonical.data.json', JSON.stringify(jobs, null, 4), 'utf-8', function (err) {
       if (err) throw err;
       console.log('Your info has been written into JSON file');
     });
-
+    await browser.close();
     console.log('Process Completed');
   } catch (err) {
-    console.log(err);
+    console.log('Something went wrong', err.message);
     await browser.close();
     console.log(error("Browser closed"));
   }
