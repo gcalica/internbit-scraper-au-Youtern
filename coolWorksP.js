@@ -18,146 +18,120 @@ async function fetchInfo(page, selector) {
   return result;
 }
 
-async function getLink(page, url) {
-  await page.goto(url);
-  await page.waitForNavigation();
-  let details = await page.evaluate(() => {
-    let contact = fetchInfo(page,'ul[class=contact-list] li');
-    let compensation = fetchInfo(page, 'div[class=benefits]');
-    let qualifications = fetchInfo(page, 'div[class=employee_expectations] p');
-    let description = fetchInfo(page, 'div[class=employee-experience] p');
-
-    return {contact, compensation, description, qualifications};
-  });
-return details;
+async function getLinks(page) {
+  const links = await page.evaluate(
+      () => Array.from(
+          // eslint-disable-next-line no-undef
+          document.querySelectorAll('div[class=top-meta] a'),
+          a => a.getAttribute('href'),
+      ),
+  );
+  return links;
 }
 
-async function addBase(url) {
-  let Base = 'https://www.coolworks.com';
-  let link = Base + url;
-  return link;
+async function getAllLinks(page) {
+  let next = true;
+  const elements = [];
+  while (next === true) {
+    try {
+      // eslint-disable-next-line no-await-in-loop
+      await page.waitFor(1000);
+      getLinks(page).then(links => {
+        elements.push(links);
+      });
+      await page.waitForSelector('ul[class=paging] a[rel=next]');
+      const nextPage = await page.$('ul[class=paging] a[rel=next]');
+      await nextPage.click();
+    } catch (errp) {
+      console.log(errp.message);
+      console.log(elements);
+      next = false;
+      console.log('\nReached the end of pages!');
+    }
+  }
+  console.log(elements);
+  return elements;
 }
+
+async function getPageInfo(page, elements) {
+  let JobsScraped = 0;
+  const details = [];
+  for (let i = 0; i < elements.length; i++) {
+    for (let j = 0; j < elements[i].length; j++) {
+      const url = 'https://www.coolworks.com${elements[i][j]}';
+
+      const company = list.querySelector('div.top-meta h5');
+      const location = list.querySelector('p[class=locations] a');
+      const posted = list.querySelector('div[class=link-job] span');
+      let skills = '';
+      skills = page.evaluate(
+          () => Array.from(
+              document.querySelectorAll('p[class=blurb]')),
+      );
+      if (skills.length === 0) {
+        skills = 'N/A';
+      } else {
+        skills = removeDuplicates(skills);
+      }
+      await page.goto(url);
+      await page.waitForNavigation();
+        const position = fetchInfo(page, 'div[class=ttl-decor fixed-ttl] h1')
+        const contact = fetchInfo(page, 'ul[class=contact-list] li');
+        const compensation = fetchInfo(page, 'div[class=benefits]');
+        const qualifications = fetchInfo(page, 'div[class=employee_expectations] p');
+        const description = fetchInfo(page, 'div[class=employee-experience] p');
+        const lastScraped = new Date();
+
+        JobsScraped++;
+
+      details.push({
+          position: position,
+          company: company,
+          location: location,
+          posted: posted,
+          contact: contact,
+          compensation: compensation,
+          qualifications: qualifications,
+          description: description,
+          url: url,
+          lastScraped: lastScraped,
+        });
+    }
+  }
+  console.log('Total Jobs Scraped: ', JobsScraped);
+  return details;
+}
+
+
 
 (async () => {
   try {
-    const jobs = [];
-    let JobsScraped = 0;
-
       let browser = await puppeteer.launch({ slowMo: 250, devtools: true }); // Slow down by 250 ms
       let page = await browser.newPage();
-      // goes to the computer search page
-      await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=computer&commit=Search');
-      //
-      // // search technology jobs
-      // await page.waitForSelector('input[id="search_keywords"]');
-      // // change this text for what you want to search
-      // await page.type('input[id=search_keywords]', 'computer');
-      // await page.click('div[class="search-submit"]');
-    // Go to search internship page
-    await page.waitFor(2000);
+
+      // search technology jobs
+      await page.waitForSelector('input[id="search_keywords"]');
+      // change this text for what you want to search
+      await page.type('input[id=search_keywords]', 'computer');
+      await page.click('div[class="search-submit"]');
+      await page.waitForSelector('article[class=employer-post');
+
     // Scrape information
     try {
-      let contact;
-      let compensation;
-      let description;
-      let qualifications;
-      let url = '';
-      let position;
-      let company;
-      let location;
-      let posted;
-      // let skills = '';
-      let lastScraped;
-      let starting = 'https://www.coolworks.com';
-
-        let jobInfo = await page.evaluate(() => {
-          let section = document.querySelector('.holder');
-          let cards = Array.from(section.children);
-
-          let info = cards.map(list => {
-            position = list.querySelector('div.top-meta h4');
-            company = list.querySelector('div.top-meta h5');
-            location = list.querySelector('p[class=locations] a');
-            posted = list.querySelector('div[class=link-job] span');
-            lastScraped = new Date();
-            url = list.getAttribute('href');
-            return {position, company, location, posted, lastScraped, url};
+      await getAllLinks(page).then((elements) => {
+        getPageInfo(page, elements).then((data) => {
+          // write json file
+          fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(data), function (e) {
+            if (e) throw e;
+            console.log('Your info has been written into the coolworksP.canonical.data.JSON file');
           });
-          return info;
-        });
-
-
-        for (let job of jobInfo) {
-          let link = await addBase(jobInfo["url"]);
-          let other = await getLink(page, link);
-          jobInfo["extra"] = other;
-          jobInfo["url"] = link;
-
-          jobs.push ({
-            // position: position,
-            // company: company,
-            // location: location,
-            // posted: posted,
-            // url: url,
-            // lastScraped: lastScraped,
-            main: jobInfo,
-            // description: description,
-            // compensation: compensation,
-            // qualifications: qualifications,
-            // contact: contact,
-
-          });        }
-
-      // skills = page.evaluate(
-      //     () => Array.from(
-      //         document.querySelectorAll('selector'),
-      //         a => a.textContent,
-      //     ),
-      // );
-      // if (skills.length === 0) {
-      //   skills = 'N/A';
-      // } else {
-      //   skills = removeDuplicates(skills);
-      // }
-
-
-      // const position = await fetchInfo(page, 'div.top-meta h4');
-      // const company = await fetchInfo(page, 'div.top-meta h5');
-      // const location = await fetchInfo(page, 'p[class=locations] a');
-      // let posted = await fetchInfo(page, 'div[class=link-job] span');
-      // if (posted.length === 0) {
-      //   posted = 'N/A';
-      // }
-      // const lastScraped = new Date();
-
-      // push items onto array
-      // jobs.push ({
-      //   // position: position,
-      //   // company: company,
-      //   // location: location,
-      //   // posted: posted,
-      //   // url: url,
-      //   // lastScraped: lastScraped,
-      //   main: jobInfo,
-      //   description: description,
-      //   compensation: compensation,
-      //   qualifications: qualifications,
-      //   contact: contact,
-      //
-      // });
-      JobsScraped++;
-    } catch (err) {
-      console.log('Error with getting information', err.message);
-      await browser.close();
+          console.log('Process Completed');
+        })
+      })
+    } catch (errs) {
+      console.log("Error with scraping", errs.message);
     }
 
-    // write json file
-    fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(jobs), function (e) {
-      if (e) throw e;
-      console.log('Your info has been written into the coolworksP.canonical.data.JSON file');
-    });
-    console.log('Total Jobs Scraped: ', JobsScraped);
-    console.log('Process Completed');
     await browser.close();
 
   } catch (error) {
