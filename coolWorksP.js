@@ -46,7 +46,7 @@ async function getAllLinks(page) {
         console.log('\nReached the end of pages!');
       }
     }
-    console.log("All links are in array");
+    console.log(allLinks);
     return allLinks;
   }catch (erra) {
     console.log("error with getting allLinks", erra.message);
