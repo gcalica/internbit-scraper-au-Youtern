@@ -5,23 +5,22 @@ function removeDuplicates(skills) {
   return [...new Set(skills)];
 }
 
-async function getAllLinks(page) {
-
-  function getLinks(page) {
-    try {
-      const links = page.evaluate(
-          () => Array.from(
-              // eslint-disable-next-line no-undef
-              document.querySelectorAll('div[class=top-meta] a'),
-              a => a.getAttribute('href'),
-          ),
-      );
-      console.log(links);
-      return links;
-    } catch (errl) {
-      console.log("error with get links", errl.message);
-    }
+async function getLinks(page) {
+  try {
+    const links = page.evaluate(
+        () => Array.from(
+            // eslint-disable-next-line no-undef
+            document.querySelectorAll('div[class=top-meta] a'),
+            a => a.getAttribute('href'),
+        ),
+    );
+    return links;
+  } catch (errl) {
+    console.log("error with get links", errl.message);
   }
+}
+
+async function getAllLinks(page) {
 
   try {
     let next = true;
@@ -59,23 +58,25 @@ async function getPageInfo(page, allLinks) {
     const details = [];
       for (let i = 0; i < allLinks.length; i++) {
         for (let j = 0; j < allLinks[i].length; j++) {
-          const url = 'https://www.coolworks.com${allLinks[i][j]}';
+          const url = `https://www.coolworks.com${allLinks[i][j]}`;
 
-          const company = fetchInfo(page, 'div.top-meta h5');
-          const location = fetchInfo(page, 'p[class=locations] a');
-          const posted = fetchInfo(page, 'div[class=link-job] span');
+          console.log(url);
+          await page.waitForSelector('div[class=top-meta]');
+
+          const company = await page.$$( 'div[class=top-meta] h5');
+          const location = await page.$$( 'p[class=locations] a');
+          const posted = await page.$$( 'div[class=link-job] span');
+
           let skills = '';
-          skills = page.evaluate(
-              () => Array.from(
-                  document.querySelectorAll('p[class=blurb]')),
-          );
+          skills = page.$$('p[class=blurb]');
           if (skills.length === 0) {
             skills = 'N/A';
           } else {
             skills = removeDuplicates(skills);
           }
+
           await page.goto(url);
-          await page.waitForNavigation();
+          await page.waitForSelector('div[class=ttl-decor fixed-ttl]');
           const position = fetchInfo(page, 'div[class=ttl-decor fixed-ttl] h1');
           const contact = fetchInfo(page, 'ul[class=contact-list] li');
           const compensation = fetchInfo(page, 'div[class=benefits]');
@@ -93,6 +94,7 @@ async function getPageInfo(page, allLinks) {
             contact: contact,
             compensation: compensation,
             qualifications: qualifications,
+            skills: skills,
             description: description,
             url: url,
             lastScraped: lastScraped,
