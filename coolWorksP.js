@@ -47,7 +47,6 @@ async function getAllLinks(page) {
         console.log('\nReached the end of pages!');
       }
     }
-    console.log(allLinks);
     return allLinks;
   }catch (erra) {
     console.log("error with getting allLinks", erra.message);
@@ -62,9 +61,9 @@ async function getPageInfo(page, allLinks) {
         for (let j = 0; j < allLinks[i].length; j++) {
           const url = 'https://www.coolworks.com${allLinks[i][j]}';
 
-          const company = list.querySelector('div.top-meta h5');
-          const location = list.querySelector('p[class=locations] a');
-          const posted = list.querySelector('div[class=link-job] span');
+          const company = fetchInfo(page, 'div.top-meta h5');
+          const location = fetchInfo(page, 'p[class=locations] a');
+          const posted = fetchInfo(page, 'div[class=link-job] span');
           let skills = '';
           skills = page.evaluate(
               () => Array.from(
@@ -77,7 +76,7 @@ async function getPageInfo(page, allLinks) {
           }
           await page.goto(url);
           await page.waitForNavigation();
-          const position = fetchInfo(page, 'div[class=ttl-decor fixed-ttl] h1')
+          const position = fetchInfo(page, 'div[class=ttl-decor fixed-ttl] h1');
           const contact = fetchInfo(page, 'ul[class=contact-list] li');
           const compensation = fetchInfo(page, 'div[class=benefits]');
           const qualifications = fetchInfo(page, 'div[class=employee_expectations] p');
@@ -108,11 +107,11 @@ async function getPageInfo(page, allLinks) {
 }
 
 async function fetchInfo(page, selector) {
-  let result = '';
+  let result;
   try {
 
     await page.waitForSelector(selector);
-    result = await page.evaluate((select) => document.querySelector(select).textContent, selector);
+    result = await page.evaluate(document.querySelector(selector));
   } catch (error) {
     console.log('Error with fetching info', error.message);
     result = 'Error';

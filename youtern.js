@@ -32,6 +32,8 @@ const fs = require('fs');
         let locationNode = page.$$('div.search-result-item-company-name a');
         let companyName = page.$$('div[class=search-result-item-company-name]');
         let datePosted = page.$$('span[class=search-result-item-post-date]');
+        page.hover('div[class=s-res] b');
+        let compensationNode = page.$$('div[class=popup-field] div');
 
         // let compensationNode = document.querySelectorAll('tbody td:6th-of-type(2)');
         // let startNode = document.querySelectorAll('tbody td:10th-of-type(2)');
@@ -48,7 +50,7 @@ const fs = require('fs');
             location: locationNode[i].innerText.trim(),
             company: companyName[i].innerText.trim(),
             posted: datePosted[i].innerText.trim(),
-            // compensation: compensationNode[i].innerText.trim(),
+            compensation: compensationNode[i].innerText.trim(),
             // qualifications: qualificationNode[i].innerText.trim(),
             // description: descriptionList[i].innerText.trim(),
           });
