@@ -32,7 +32,7 @@ const fs = require('fs');
         let locationNode = page.$$('div.search-result-item-company-name a');
         let companyName = page.$$('div[class=search-result-item-company-name]');
         let datePosted = page.$$('span[class=search-result-item-post-date]');
-        // click on link
+
         // let compensationNode = document.querySelectorAll('tbody td:6th-of-type(2)');
         // let startNode = document.querySelectorAll('tbody td:10th-of-type(2)');
         // let qualificationNode = document.querySelectorAll('ul li');

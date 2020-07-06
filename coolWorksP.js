@@ -5,23 +5,24 @@ function removeDuplicates(skills) {
   return [...new Set(skills)];
 }
 
-async function getLinks(page) {
-  try {
-    const links = await page.evaluate(
-        () => Array.from(
-            // eslint-disable-next-line no-undef
-            document.querySelectorAll('div[class=top-meta] a'),
-            a => a.getAttribute('href'),
-        ),
-    );
-    console.log(links);
-    return links;
-  } catch (errl) {
-    console.log("error with get links", errl.message);
-  }
-}
-
 async function getAllLinks(page) {
+
+  function getLinks(page) {
+    try {
+      const links = page.evaluate(
+          () => Array.from(
+              // eslint-disable-next-line no-undef
+              document.querySelectorAll('div[class=top-meta] a'),
+              a => a.getAttribute('href'),
+          ),
+      );
+      console.log(links);
+      return links;
+    } catch (errl) {
+      console.log("error with get links", errl.message);
+    }
+  }
+
   try {
     let next = true;
     const allLinks = [];
