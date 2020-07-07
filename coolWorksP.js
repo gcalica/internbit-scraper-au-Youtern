@@ -7,10 +7,11 @@ function removeDuplicates(skills) {
 
 async function getLinks(page) {
   try {
-    const links = page.evaluate(
+    const links = await page.evaluate(
+        document.querySelector('div[class=top-meta] h4')
         () => Array.from(
             // eslint-disable-next-line no-undef
-            document.querySelectorAll('div[class=top-meta] a'),
+            document.querySelector('div[class=top-meta] h4'),
             a => a.getAttribute('href'),
         ),
     );
@@ -52,60 +53,65 @@ async function getAllLinks(page) {
   }
 }
 
-async function getPageInfo(page, allLinks) {
-  try {
-    let JobsScraped = 0;
-    const details = [];
-      for (let i = 0; i < allLinks.length; i++) {
-        for (let j = 0; j < allLinks[i].length; j++) {
-          const url = `https://www.coolworks.com${allLinks[i][j]}`;
+async function findJobs(page, allLinks) {
+  const general = [];
+  for (let i = 0; i < allLinks.length; i++) {
+    for (let j = 0; j < allLinks[i].length; j++) {
+      const links = `https://www.coolworks.com${allLinks[i][j]}`;
+      await page.goto(links);
+      await page.waitForSelector('a[class=more-from]');
 
-          console.log(url);
-          await page.waitForSelector('div[class=top-meta]');
+      const compensation = fetchInfo(page, 'div[class=benefits] p');
+      const qualifications = fetchInfo(page, 'div[class=employee-expectations] ul');
 
-          const company = await page.$$( 'div[class=top-meta] h5');
-          const location = await page.$$( 'p[class=locations] a');
-          const posted = await page.$$( 'div[class=link-job] span');
 
-          let skills = '';
-          skills = page.$$('p[class=blurb]');
-          if (skills.length === 0) {
-            skills = 'N/A';
-          } else {
-            skills = removeDuplicates(skills);
-          }
+      await page.evaluate(() => {
+        document.querySelector('a[class=more-from]').click();
+      });
+      await page.waitForSelector('ul[class=contact-list] li[class=website]');
 
-          await page.goto(url);
-          await page.waitForSelector('div[class=ttl-decor fixed-ttl]');
-          const position = fetchInfo(page, 'div[class=ttl-decor fixed-ttl] h1');
-          const contact = fetchInfo(page, 'ul[class=contact-list] li');
-          const compensation = fetchInfo(page, 'div[class=benefits]');
-          const qualifications = fetchInfo(page, 'div[class=employee_expectations] p');
-          const description = fetchInfo(page, 'div[class=employee-experience] p');
-          const lastScraped = new Date();
+      const url = page.url();
+      const position = fetchInfo(page, 'h4[class=job-title]');
+      const company = fetchInfo(page, 'div[class=container] h1');
+      const location = fetchInfo(page, 'div[class=location]');
+      const start = fetchInfo(page, 'div[class-section] li');
+      const name = fetchInfo(page, 'ul[class=contact-list] li[class=profile]');
+      const email = fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
+      const website = fetchInfo(page, 'ul[class=contact-list] li[class=website]');
 
-          JobsScraped++;
-
-          details.push({
-            position: position,
-            company: company,
-            location: location,
-            posted: posted,
-            contact: contact,
-            compensation: compensation,
-            qualifications: qualifications,
-            skills: skills,
-            description: description,
-            url: url,
-            lastScraped: lastScraped,
-          });
-        }
+      let phone = fetchInfo(page, 'ul[class=contact-list] li[class=phone]');
+      if (phone === null) {
+        phone = 'N/A';
       }
-      console.log('Total Jobs Scraped: ', JobsScraped);
-      return details;
-  } catch (errp) {
-    console.log("error with getting page info:", errp.message);
+
+      const handles = await page.$$('a[class=more-from]');
+      for (const handle of handles)
+        await handle.click();
+
+      const description = fetchInfo(page, 'div[class=job-description text show-content] p');
+
+      general.push({
+        position: position,
+        company: company,
+        location: location,
+        description: description,
+        compensation: compensation,
+        qualifications: qualifications,
+        start: start,
+        contact: {
+          employer: name,
+          email: email,
+          phone: phone,
+          website: website,
+        },
+        url: {
+          jobs: url,
+          companyProfile: links,
+        },
+      });
+    }
   }
+  return general;
 }
 
 async function fetchInfo(page, selector) {
@@ -125,27 +131,20 @@ async function fetchInfo(page, selector) {
   try {
       let browser = await puppeteer.launch({ slowMo: 250, devtools: true }); // Slow down by 250 ms
       let page = await browser.newPage();
-      await page.goto('https://www.coolworks.com/search?q=');
-      // search technology jobs
-      await page.waitForSelector('input[id=search_keywords]');
-      // change value for what you want to search
-      await page.evaluate(() => {
-        document.querySelector('input[id=search_keywords]').value = 'computer';
-      });
-      await page.evaluate(() => {
-        document.querySelector('div[class=search-submit]').click();
-      });
+      await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&employer_types=IT+%2F+Technology&commit=Search&search%5Bfields_to_search%5D=job_title');
       await page.waitForSelector('article[class=employer-post');
 
     // Scrape information
     try {
       getAllLinks(page).then((allLinks => {
-        getPageInfo(page, allLinks).then((details => {
-          fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(details), function (e) {
+        console.log(allLinks);
+        findJobs(page, allLinks).then((general => {
+          fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(general), function (e) {
             if (e) throw e;
             console.log('Your info has been written into the coolworksP.canonical.data.JSON file');
           });
           console.log('Process Completed');
+          browser.close();
         }))
       }))
     } catch (errorDetailType) {
