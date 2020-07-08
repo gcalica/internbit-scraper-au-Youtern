@@ -5,7 +5,7 @@ async function getLinks(page) {
   try {
     let links;
     links = await page.evaluate(() => {
-      const u = document.querySelectorAll('h4 a');
+      const u = document.querySelectorAll('p[class=job-list-link] a');
       return [].map.call(u, a => a.href);
     });
     return links;
@@ -46,20 +46,6 @@ async function getAllLinks(page) {
   }
 }
 
-async function getURL(page) {
-  try {
-    let u;
-    u = await page.evaluate(() => {
-      const u = document.querySelector('a[class=more-from]').getAttribute('href');
-    });
-    return u;
-  } catch (errl) {
-    console.log("error with get links", errl.message);
-  }
-}
-
-
-
 async function findJobs(page, allLinks) {
   const general = [];
   try {
@@ -67,13 +53,6 @@ async function findJobs(page, allLinks) {
       for (let j = 0; j < allLinks[i].length; j++) {
         const pageLink = allLinks[i][j];
         await page.goto(pageLink);
-        let urls;
-        await page.waitForSelector('a[class=more-from]');
-        getURL(page).then(u => {
-          console.log(u);
-          urls = u;
-          page.goto(u);
-        });
 
         await page.waitForSelector('dl[class=other-details] dd:nth-child(2)');
 
@@ -83,15 +62,15 @@ async function findJobs(page, allLinks) {
           await page.waitFor(2000);
         }
 
-        const url = urls;
+        const url = pageLink;
         const position = fetchInfo(page, 'h4[class=job-title]');
         const company = fetchInfo(page, 'div[class=container] h1');
         const location = fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
         const start = fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
-        const name = fetchInfo(page, 'ul[class=contact-list] li[class=profile]');
-        let email = fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
-        let website = fetchInfo(page, 'ul[class=contact-list] li[class=website]');
-        let phone = fetchInfo(page, 'ul[class=contact-list] li[class=phone]');
+        const name = fetchInfo(page, 'li[class=profile]');
+        let email = fetchInfo(page, 'li[class=mail]');
+        let website = fetchInfo(page, 'li[class=website]');
+        let phone = fetchInfo(page, 'li[class=phone]');
 
         const description = fetchInfo(page, 'ul[class=job-list-list] p');
         const skills = fetchInfo(page, 'ul[class=job-list-list] ul');
@@ -115,10 +94,7 @@ async function findJobs(page, allLinks) {
             phone: phone,
             website: website,
           },
-          url: {
-            jobs: url,
-            companyProfile: pageLink,
-          },
+          url: pageLink,
         });
         await page.waitFor(4000);
       }
@@ -136,7 +112,7 @@ async function fetchInfo(page, selector) {
       result = 'N/A';
     } else {
       await page.waitForSelector(selector);
-      result = await page.evaluate((select) => document.querySelectorAll(select).textContent, selector);
+      result = await page.evaluate((select) => document.querySelector(select).textContent, selector);
     }
   } catch (error) {
     console.log('Our Error: fetchInfo() failed.\n', error.message);
@@ -159,14 +135,14 @@ async function fetchInfo(page, selector) {
         console.log(allLinks);
         findJobs(page, allLinks).then((general => {
           console.log(general);
-          fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(general), function (e) {
-            if (e) throw e;
-            console.log('Your info has been written into the coolworksP.canonical.data.JSON file');
+          fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(general, null, 4), 'utf-8', function (err) {
+            if (err) throw err;
+            console.log('Your info has been written into JSON file');
           });
           console.log('Process Completed');
           browser.close();
         }))
-      }))
+      }));
     } catch (errorDetailType) {
       console.log("Error with scraping", errorDetailType.message);
     }
