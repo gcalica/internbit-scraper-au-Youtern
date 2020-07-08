@@ -1,17 +1,13 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-function removeDuplicates(skills) {
-  return [...new Set(skills)];
-}
-
 async function getLinks(page) {
   try {
-    const links = await page.evaluate(
-        () => Array.from(
-        document.querySelector('h4 a').getAttribute('href'),
-    ),
-  );
+    let links;
+    links = await page.evaluate(() => {
+      const u = document.querySelectorAll('h4 a');
+      return [].map.call(u, a => a.href);
+    });
     return links;
   } catch (errl) {
     console.log("error with get links", errl.message);
@@ -50,63 +46,85 @@ async function getAllLinks(page) {
   }
 }
 
+async function getURL(page) {
+  try {
+    let u;
+    u = await page.evaluate(() => {
+      const u = document.querySelector('a[class=more-from]').getAttribute('href');
+    });
+    return u;
+  } catch (errl) {
+    console.log("error with get links", errl.message);
+  }
+}
+
+
+
 async function findJobs(page, allLinks) {
   const general = [];
-  for (let i = 0; i < allLinks.length; i++) {
-    for (let j = 0; j < allLinks[i].length; j++) {
-      const links = `https://www.coolworks.com${allLinks[i][j]}`;
-      await page.goto(links);
-      await page.waitForSelector('a[class=more-from]');
+  try {
+    for (let i = 0; i < allLinks.length; i++) {
+      for (let j = 0; j < allLinks[i].length; j++) {
+        const pageLink = allLinks[i][j];
+        await page.goto(pageLink);
+        let urls;
+        await page.waitForSelector('a[class=more-from]');
+        getURL(page).then(u => {
+          console.log(u);
+          urls = u;
+          page.goto(u);
+        });
 
-      const compensation = fetchInfo(page, 'div[class=benefits] p');
-      const qualifications = fetchInfo(page, 'div[class=employee-expectations] ul');
+        await page.waitForSelector('dl[class=other-details] dd:nth-child(2)');
 
+        const handles = await page.$$('button[class=view-more]');
+        for (const handle of handles) {
+          await handle.click();
+          await page.waitFor(2000);
+        }
 
-      await page.evaluate(() => {
-        document.querySelector('a[class=more-from]').click();
-      });
-      await page.waitForSelector('ul[class=contact-list] li[class=website]');
+        const url = urls;
+        const position = fetchInfo(page, 'h4[class=job-title]');
+        const company = fetchInfo(page, 'div[class=container] h1');
+        const location = fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
+        const start = fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
+        const name = fetchInfo(page, 'ul[class=contact-list] li[class=profile]');
+        let email = fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
+        let website = fetchInfo(page, 'ul[class=contact-list] li[class=website]');
+        let phone = fetchInfo(page, 'ul[class=contact-list] li[class=phone]');
 
-      const url = page.url();
-      const position = fetchInfo(page, 'h4[class=job-title]');
-      const company = fetchInfo(page, 'div[class=container] h1');
-      const location = fetchInfo(page, 'div[class=location]');
-      const start = fetchInfo(page, 'div[class-section] li');
-      const name = fetchInfo(page, 'ul[class=contact-list] li[class=profile]');
-      const email = fetchInfo(page, 'ul[class=contact-list] li[class=mail]');
-      const website = fetchInfo(page, 'ul[class=contact-list] li[class=website]');
+        const description = fetchInfo(page, 'ul[class=job-list-list] p');
+        const skills = fetchInfo(page, 'ul[class=job-list-list] ul');
+        const resp = fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
+        const compensation = fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
 
-      let phone = fetchInfo(page, 'ul[class=contact-list] li[class=phone]');
-      if (phone === null) {
-        phone = 'N/A';
+        general.push({
+          position: position,
+          company: company,
+          location: location,
+          description: description,
+          compensation: compensation,
+          qualifications: {
+            skills: skills,
+            responsibilities: resp,
+          },
+          start: start,
+          contact: {
+            employer: name,
+            email: email,
+            phone: phone,
+            website: website,
+          },
+          url: {
+            jobs: url,
+            companyProfile: pageLink,
+          },
+        });
+        await page.waitFor(4000);
       }
-
-      const handles = await page.$$('a[class=more-from]');
-      for (const handle of handles)
-        await handle.click();
-
-      const description = fetchInfo(page, 'div[class=job-description text show-content] p');
-
-      general.push({
-        position: position,
-        company: company,
-        location: location,
-        description: description,
-        compensation: compensation,
-        qualifications: qualifications,
-        start: start,
-        contact: {
-          employer: name,
-          email: email,
-          phone: phone,
-          website: website,
-        },
-        url: {
-          jobs: url,
-          companyProfile: links,
-        },
-      });
     }
+  } catch (e) {
+    console.log("Error with getting info off Page: ", e.message);
   }
   return general;
 }
@@ -114,11 +132,14 @@ async function findJobs(page, allLinks) {
 async function fetchInfo(page, selector) {
   let result;
   try {
-
-    await page.waitForSelector(selector);
-    result = await page.evaluate(document.querySelector(selector));
+    if ((await page.$(selector)) === null ) {
+      result = 'N/A';
+    } else {
+      await page.waitForSelector(selector);
+      result = await page.evaluate((select) => document.querySelectorAll(select).textContent, selector);
+    }
   } catch (error) {
-    console.log('Error with fetching info', error.message);
+    console.log('Our Error: fetchInfo() failed.\n', error.message);
     result = 'Error';
   }
   return result;
@@ -126,8 +147,9 @@ async function fetchInfo(page, selector) {
 
 (async () => {
   try {
-      let browser = await puppeteer.launch({ slowMo: 250, devtools: true }); // Slow down by 250 ms
+      let browser = await puppeteer.launch({ headless: false }); // Slow down by 250 ms
       let page = await browser.newPage();
+      // let page2 = await browser.newPage();
       await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&employer_types=IT+%2F+Technology&commit=Search&search%5Bfields_to_search%5D=job_title');
       await page.waitForSelector('article[class=employer-post');
 
@@ -136,6 +158,7 @@ async function fetchInfo(page, selector) {
       getAllLinks(page).then((allLinks => {
         console.log(allLinks);
         findJobs(page, allLinks).then((general => {
+          console.log(general);
           fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(general), function (e) {
             if (e) throw e;
             console.log('Your info has been written into the coolworksP.canonical.data.JSON file');
