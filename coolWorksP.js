@@ -8,13 +8,10 @@ function removeDuplicates(skills) {
 async function getLinks(page) {
   try {
     const links = await page.evaluate(
-        document.querySelector('div[class=top-meta] h4')
         () => Array.from(
-            // eslint-disable-next-line no-undef
-            document.querySelector('div[class=top-meta] h4'),
-            a => a.getAttribute('href'),
-        ),
-    );
+        document.querySelector('h4 a').getAttribute('href'),
+    ),
+  );
     return links;
   } catch (errl) {
     console.log("error with get links", errl.message);
