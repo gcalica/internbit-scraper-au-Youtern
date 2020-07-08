@@ -47,7 +47,7 @@ async function getAllLinks(page) {
 }
 
 async function findJobs(page, allLinks) {
-  const general = [];
+  let general = [];
   try {
     for (let i = 0; i < allLinks.length; i++) {
       for (let j = 0; j < allLinks[i].length; j++) {
@@ -61,41 +61,60 @@ async function findJobs(page, allLinks) {
           await handle.click();
           await page.waitFor(2000);
         }
+        // const position = await fetchInfo('h4[class=job-title]');
+        // const company = await fetchInfo('div[class=container] h1');
+        // const location = await fetchInfo('dl[class=other-details] dd:nth-child(2)');
+        // const start = await fetchInfo('dl[class=other-details] dd:nth-child(4)');
+        // const name = await fetchInfo('li[class=profile]');
+        // let email = await fetchInfo('li[class=mail]');
+        // let website = await fetchInfo('li[class=website]');
+        // let phone = await fetchInfo( 'li[class=phone]');
+        //
+        // const description = await fetchInfo('ul[class=job-list-list] p');
+        // const skills = await fetchInfo('ul[class=job-list-list] ul');
+        // const resp = await fetchInfo('ul[class=job-list-list] ul:nth-child(5)');
+        // const compensation = await fetchInfo('ul[class=job-list-list] ul:nth-child(7)');
 
-        const url = pageLink;
-        const position = fetchInfo(page, 'h4[class=job-title]');
-        const company = fetchInfo(page, 'div[class=container] h1');
-        const location = fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
-        const start = fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
-        const name = fetchInfo(page, 'li[class=profile]');
-        let email = fetchInfo(page, 'li[class=mail]');
-        let website = fetchInfo(page, 'li[class=website]');
-        let phone = fetchInfo(page, 'li[class=phone]');
+        let jobnum = [];
+        jobnum.push(page.$$('h4[class=job-title]'));
+        await page.waitFor(3000);
+        console.log(jobnum);
 
-        const description = fetchInfo(page, 'ul[class=job-list-list] p');
-        const skills = fetchInfo(page, 'ul[class=job-list-list] ul');
-        const resp = fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
-        const compensation = fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
+        for (let k = 0; k < jobnum.length; k++) {
+          const position = await fetchInfo(page, 'h4[class=job-title]');
+          const company = await fetchInfo(page, 'div[class=container] h1');
+          const location = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
+          const start = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
+          const name = await fetchInfo(page, 'li[class=profile]');
+          let email = await fetchInfo(page, 'li[class=mail]');
+          let website = await fetchInfo(page, 'li[class=website]');
+          let phone = await fetchInfo(page, 'li[class=phone]');
 
-        general.push({
-          position: position,
-          company: company,
-          location: location,
-          description: description,
-          compensation: compensation,
-          qualifications: {
-            skills: skills,
-            responsibilities: resp,
-          },
-          start: start,
-          contact: {
-            employer: name,
-            email: email,
-            phone: phone,
-            website: website,
-          },
-          url: pageLink,
-        });
+          const description = await fetchInfo(page, 'ul[class=job-list-list] p');
+          const skills = await fetchInfo(page, 'ul[class=job-list-list] ul');
+          const resp = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
+          const compensation = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
+
+          general.push({
+            position: position,
+            company: company,
+            location: location,
+            description: description,
+            compensation: compensation,
+            qualifications: {
+              skills: skills,
+              responsibilities: resp,
+            },
+            start: start,
+            contact: {
+              employer: name,
+              email: email,
+              phone: phone,
+              website: website,
+            },
+            url: pageLink,
+          });
+        }
         await page.waitFor(4000);
       }
     }
@@ -121,6 +140,14 @@ async function fetchInfo(page, selector) {
   return result;
 }
 
+async function write(obj) {
+  fs.writeFile('./coolworksP.canonical.data.json', JSON.stringify(obj, null, 4), 'utf-8', function (err) {
+    if (err) throw err;
+    console.log('Your info has been written into JSON file');
+  });
+}
+
+
 (async () => {
   try {
       let browser = await puppeteer.launch({ headless: false }); // Slow down by 250 ms
@@ -134,11 +161,11 @@ async function fetchInfo(page, selector) {
       getAllLinks(page).then((allLinks => {
         console.log(allLinks);
         findJobs(page, allLinks).then((general => {
-          console.log(general);
-          fs.writeFile('coolworksP.canonical.data.json', JSON.stringify(general, null, 4), 'utf-8', function (err) {
-            if (err) throw err;
-            console.log('Your info has been written into JSON file');
-          });
+          write(general);
+          // fs.writeFile('./coolworksP.canonical.data.json', JSON.stringify(general, null, 4), 'utf-8', function (err) {
+          //   if (err) throw err;
+          //   console.log('Your info has been written into JSON file');
+          // });
           console.log('Process Completed');
           browser.close();
         }))
