@@ -62,6 +62,10 @@ async function findJobs(page, allLinks) {
           await handle.click();
           await page.waitFor(2000);
         }
+// HOW TO SCOPE IN PUPPETEER ... EVALUATE? CHILDNODE?
+        // scope into each li node element and put it into a for loop
+        // scrape all the info needed from each li element then push it to the general array
+
 
         // make a node that points to each li element (cards)
         let node = await page.$$('li[class="description-toggler job"]');
