@@ -1,3 +1,4 @@
+import _ from 'lodash';
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
@@ -26,7 +27,7 @@ async function getAllLinks(page) {
           allLinks.push(links);
         }));
         await page.waitFor(3000);
-          const nextPage = await page.$('ul[class=paging] a[rel=next]');
+        const nextPage = await page.$('ul[class=paging] a[rel=next]');
         if (nextPage !== null) {
           await nextPage.click();
         } else {
@@ -61,26 +62,14 @@ async function findJobs(page, allLinks) {
           await handle.click();
           await page.waitFor(2000);
         }
-        // const position = await fetchInfo('h4[class=job-title]');
-        // const company = await fetchInfo('div[class=container] h1');
-        // const location = await fetchInfo('dl[class=other-details] dd:nth-child(2)');
-        // const start = await fetchInfo('dl[class=other-details] dd:nth-child(4)');
-        // const name = await fetchInfo('li[class=profile]');
-        // let email = await fetchInfo('li[class=mail]');
-        // let website = await fetchInfo('li[class=website]');
-        // let phone = await fetchInfo( 'li[class=phone]');
-        //
-        // const description = await fetchInfo('ul[class=job-list-list] p');
-        // const skills = await fetchInfo('ul[class=job-list-list] ul');
-        // const resp = await fetchInfo('ul[class=job-list-list] ul:nth-child(5)');
-        // const compensation = await fetchInfo('ul[class=job-list-list] ul:nth-child(7)');
 
-        let jobnum = [];
-        jobnum.push(page.$$('h4[class=job-title]'));
-        await page.waitFor(3000);
-        console.log(jobnum);
+        let node = page.$$('li[class="description-toggler job"]');
+        let num = _.reduce(node, function(memo, numb) { return memo + numb });
+        console.log("there are ", num, " jobs to be scraped.\n");
 
-        for (let k = 0; k < jobnum.length; k++) {
+        // make a node that points to each li element (cards)
+        // loop through the nodes and scrape the info in each card
+        for (let k = 0; k < num.length; k++) {
           const position = await fetchInfo(page, 'h4[class=job-title]');
           const company = await fetchInfo(page, 'div[class=container] h1');
           const location = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
@@ -94,6 +83,7 @@ async function findJobs(page, allLinks) {
           const skills = await fetchInfo(page, 'ul[class=job-list-list] ul');
           const resp = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
           const compensation = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
+          const lastScraped = new Date();
 
           general.push({
             position: position,
@@ -113,6 +103,7 @@ async function findJobs(page, allLinks) {
               website: website,
             },
             url: pageLink,
+            lastScraped: lastScraped,
           });
         }
         await page.waitFor(4000);
@@ -150,11 +141,11 @@ async function write(obj) {
 
 (async () => {
   try {
-      let browser = await puppeteer.launch({ headless: false }); // Slow down by 250 ms
-      let page = await browser.newPage();
-      // let page2 = await browser.newPage();
-      await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&employer_types=IT+%2F+Technology&commit=Search&search%5Bfields_to_search%5D=job_title');
-      await page.waitForSelector('article[class=employer-post');
+    let browser = await puppeteer.launch({ headless: false }); // Slow down by 250 ms
+    let page = await browser.newPage();
+    // let page2 = await browser.newPage();
+    await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&employer_types=IT+%2F+Technology&commit=Search&search%5Bfields_to_search%5D=job_title');
+    await page.waitForSelector('article[class=employer-post');
 
     // Scrape information
     try {
