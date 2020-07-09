@@ -75,20 +75,11 @@ async function findJobs(page, allLinks) {
             ),
         );
 
-        // grabs all the company
-        const company = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('div[class=container] h1'),
-                a => a.textContent,
-            ),
-        );
-
         // grabs all the location
         const location = await page.evaluate(
             () => Array.from(
                 // eslint-disable-next-line no-undef
-                document.querySelectorAll('dl[class=other-details] dd:nth-child(2)'),
+                document.querySelectorAll('div[class=location]'),
                 a => a.textContent,
             ),
         );
@@ -102,32 +93,56 @@ async function findJobs(page, allLinks) {
             ),
         );
 
-        // grabs all the skills
-        const skills = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('ul[class=job-list-list] ul'),
-                a => a.textContent,
-            ),
-        );
+        // // grabs all the skills
+        // let skills;
+        // if ((await page.$('ul[class=job-list-list] ul')) === null ) {
+        //   skills = [];
+        //   for (let i = 0; i < node.length; i++) {
+        //     skills.push('N/A');
+        //   }
+        // } else {
+        //   skills = await page.evaluate(
+        //       () => Array.from(
+        //           // eslint-disable-next-line no-undef
+        //           document.querySelectorAll('ul[class=job-list-list] ul'),
+        //           a => a.textContent,
+        //       ),
+        //   );
+        // }
 
-        // grabs all the responsibility
-        const resp = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('ul[class=job-list-list] ul:nth-child(5)'),
-                a => a.textContent,
-            ),
-        );
+        // // grabs all the responsibility
+        // let resp;
+        // if ((await page.$('ul[class=job-list-list] ul:nth-child(5)')) === null ) {
+        //   for (let i = 0; i < node.length; i++) {
+        //     resp = 'N/A';
+        //   }
+        // } else {
+        //   resp = await page.evaluate(
+        //       () => Array.from(
+        //           // eslint-disable-next-line no-undef
+        //           document.querySelectorAll('ul[class=job-list-list] ul:nth-child(5)'),
+        //           a => a.textContent,
+        //       ),
+        //   );
+        // }
 
-        // grabs all the compensation
-        const compensation = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('ul[class=job-list-list] ul:nth-child(7)'),
-                a => a.textContent,
-            ),
-        );
+        // // grabs all the compensation
+        // let compensation;
+        // if ((await page.$('ul[class=job-list-list] ul:nth-child(7)')) === null ) {
+        //   compensation = [];
+        //   for (let i = 0; i < node.length; i++) {
+        //     compensation.push('N/A');
+        //   }
+        // } else {
+        //   compensation = await page.evaluate(
+        //       () => Array.from(
+        //           // eslint-disable-next-line no-undef
+        //           document.querySelectorAll('ul[class=job-list-list] ul:nth-child(7)'),
+        //           a => a.textContent,
+        //       ),
+        //   );
+        // }
+
 
         // const position = await fetchInfo(page, 'h4[class=job-title]');
         // const company = await fetchInfo(page, 'div[class=container] h1');
@@ -137,46 +152,52 @@ async function findJobs(page, allLinks) {
         // const resp = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
         // const compensation = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
 
-
-        // loop through the nodes and scrape the info in each card
+        // loop through the number of nodes
         for (let i = 0; i < node.length; i++) {
+          const company = await fetchInfo(page, 'div[class=container] h1');
           const start = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
           const name = await fetchInfo(page, 'li[class=profile]');
           let email = await fetchInfo(page, 'li[class=mail]');
           let website = await fetchInfo(page, 'li[class=website]');
-          let phone = await fetchInfo(page, 'li[class=phone]');
+          // let phone = await fetchInfo(page, 'li[class=phone]');
           const lastScraped = new Date();
 
             general.push({
             position: position[i],
-            company: company[i],
+            company: company,
             location: location[i],
             description: description[i],
-            compensation: compensation[i],
-            qualifications: {
-              skills: skills[i],
-              responsibilities: resp[i],
-            },
+            // compensation: compensation[i],
+            // qualifications: {
+            //   skills: skills[i],
+            //   responsibilities: resp[i],
+            // },
             start: start,
             contact: {
               employer: name,
               email: email,
-              phone: phone,
+              // phone: phone,
               website: website,
             },
             url: pageLink,
             lastScraped: lastScraped,
           });
             jobsScraped++;
+          console.log("company:", company);
+          console.log("name:", name);
+          console.log("email:", email);
         }
         await page.waitFor(4000);
-        console.log(position);
+        console.log("position", position);
+        console.log("location:", location);
+        console.log("Description:", description);
       }
     }
   } catch (e) {
     console.log("Error with getting info off Page: ", e.message);
   }
   console.log("Total number of jobs scraped: " + jobsScraped);
+  console.log(general);
   return general;
 }
 
@@ -184,7 +205,7 @@ async function fetchInfo(page, selector) {
   let result;
   try {
     if ((await page.$(selector)) === null ) {
-      result = 'N/A';
+        result = 'N/A';
     } else {
       await page.waitForSelector(selector);
       result = await page.evaluate((select) => document.querySelector(select).textContent, selector);
