@@ -157,16 +157,16 @@ async function findJobs(page, allLinks) {
         let phone = await fetchInfo(page, 'li[class=phone]');
 
         // loop through the number of nodes
-        for (let i = 0; i < node.length; i++) {
+        // for (let i = 0; i < node.length; i++) {
 
           general.push({
             position: position,
             location: location,
             description: description,
-            compensation: compensation[i],
+            compensation: compensation,
             qualifications: {
-              skills: skills[i],
-              responsibilities: resp[i],
+              skills: skills,
+              responsibilities: resp,
             },
             company: company,
             start: start,
@@ -179,7 +179,7 @@ async function findJobs(page, allLinks) {
             url: pageLink,
             lastScraped: new Date(),
           });
-        }
+        // }
 
             jobsScraped++;
         await page.waitFor(4000);
