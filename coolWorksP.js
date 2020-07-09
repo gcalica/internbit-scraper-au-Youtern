@@ -66,131 +66,130 @@ async function findJobs(page, allLinks) {
         // make a node that points to each li element (cards)
         let node = await page.$$('li[class="description-toggler job"]');
 
-        // grabs all the positions
-        const position = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('h4[class=job-title]'),
-                a => a.textContent,
-            ),
-        );
+        //
+        // // grabs all the positions
+        // const position = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('h4[class=job-title]'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // // grabs all the location
+        // const location = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('div[class=location]'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // // grabs all the description
+        // const description = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('ul[class=job-list-list] p'),
+        //         a => a.textContent,
+        //     ),
+        // );
 
-        // grabs all the location
-        const location = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('div[class=location]'),
-                a => a.textContent,
-            ),
-        );
+        //
+        // // below needs array of multiple
+        // const company = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('div[class=container] h1'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // const start = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('dl[class=other-details] dd:nth-child(4)'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // const name = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('li[class=profile]'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // const email = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('li[class=mail]'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // const website = await page.evaluate(
+        //     () => Array.from(
+        //         // eslint-disable-next-line no-undef
+        //         document.querySelectorAll('li[class=website]'),
+        //         a => a.textContent,
+        //     ),
+        // );
+        //
+        // let comp = clone(company, node);
+        // let strt = clone(start, node);
+        // let nme = clone(name, node);
+        // let mail = clone(email, node);
+        // let web = clone(website, node);
 
-        // grabs all the description
-        const description = await page.evaluate(
-            () => Array.from(
-                // eslint-disable-next-line no-undef
-                document.querySelectorAll('ul[class=job-list-list] p'),
-                a => a.textContent,
-            ),
-        );
-
-        // // grabs all the skills
-        // let skills;
-        // if ((await page.$('ul[class=job-list-list] ul')) === null ) {
-        //   skills = [];
-        //   for (let i = 0; i < node.length; i++) {
-        //     skills.push('N/A');
-        //   }
-        // } else {
-        //   skills = await page.evaluate(
-        //       () => Array.from(
-        //           // eslint-disable-next-line no-undef
-        //           document.querySelectorAll('ul[class=job-list-list] ul'),
-        //           a => a.textContent,
-        //       ),
-        //   );
-        // }
-
-        // // grabs all the responsibility
-        // let resp;
-        // if ((await page.$('ul[class=job-list-list] ul:nth-child(5)')) === null ) {
-        //   for (let i = 0; i < node.length; i++) {
-        //     resp = 'N/A';
-        //   }
-        // } else {
-        //   resp = await page.evaluate(
-        //       () => Array.from(
-        //           // eslint-disable-next-line no-undef
-        //           document.querySelectorAll('ul[class=job-list-list] ul:nth-child(5)'),
-        //           a => a.textContent,
-        //       ),
-        //   );
-        // }
-
-        // // grabs all the compensation
-        // let compensation;
-        // if ((await page.$('ul[class=job-list-list] ul:nth-child(7)')) === null ) {
-        //   compensation = [];
-        //   for (let i = 0; i < node.length; i++) {
-        //     compensation.push('N/A');
-        //   }
-        // } else {
-        //   compensation = await page.evaluate(
-        //       () => Array.from(
-        //           // eslint-disable-next-line no-undef
-        //           document.querySelectorAll('ul[class=job-list-list] ul:nth-child(7)'),
-        //           a => a.textContent,
-        //       ),
-        //   );
-        // }
-
-
-        // const position = await fetchInfo(page, 'h4[class=job-title]');
-        // const company = await fetchInfo(page, 'div[class=container] h1');
-        // const location = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
-        // const description = await fetchInfo(page, 'ul[class=job-list-list] p');
-        // const skills = await fetchInfo(page, 'ul[class=job-list-list] ul');
-        // const resp = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
-        // const compensation = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
+        const skills = await fetchInfo(page, 'ul[class=job-list-list] ul');
+        const resp = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(5)');
+        const compensation = await fetchInfo(page, 'ul[class=job-list-list] ul:nth-child(7)');
+        const position = await fetchInfo(page, 'h4[class=job-title]');
+        const location = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(2)');
+        const description = await fetchInfo(page, 'ul[class=job-list-list] p');
+        const company = await fetchInfo(page, 'div[class=container] h1');
+        const start = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
+        const name = await fetchInfo(page, 'li[class=profile]');
+        let email = await fetchInfo(page, 'li[class=mail]');
+        let website = await fetchInfo(page, 'li[class=website]');
+        const lastScraped = new Date();
+        let phone = await fetchInfo(page, 'li[class=phone]');
 
         // loop through the number of nodes
         for (let i = 0; i < node.length; i++) {
-          const company = await fetchInfo(page, 'div[class=container] h1');
-          const start = await fetchInfo(page, 'dl[class=other-details] dd:nth-child(4)');
-          const name = await fetchInfo(page, 'li[class=profile]');
-          let email = await fetchInfo(page, 'li[class=mail]');
-          let website = await fetchInfo(page, 'li[class=website]');
-          // let phone = await fetchInfo(page, 'li[class=phone]');
-          const lastScraped = new Date();
 
-            general.push({
-            position: position[i],
+          general.push({
+            position: position,
+            location: location,
+            description: description,
+            compensation: compensation[i],
+            qualifications: {
+              skills: skills[i],
+              responsibilities: resp[i],
+            },
             company: company,
-            location: location[i],
-            description: description[i],
-            // compensation: compensation[i],
-            // qualifications: {
-            //   skills: skills[i],
-            //   responsibilities: resp[i],
-            // },
             start: start,
             contact: {
               employer: name,
               email: email,
-              // phone: phone,
+              phone: phone,
               website: website,
             },
             url: pageLink,
-            lastScraped: lastScraped,
+            lastScraped: new Date(),
           });
-            jobsScraped++;
-          console.log("company:", company);
-          console.log("name:", name);
-          console.log("email:", email);
         }
+
+            jobsScraped++;
         await page.waitFor(4000);
         console.log("position", position);
         console.log("location:", location);
         console.log("Description:", description);
+        console.log("company:", company);
+        console.log("name:", name);
+        console.log("email:", email);
+        console.log("last scraped:", lastScraped);
       }
     }
   } catch (e) {
@@ -203,6 +202,7 @@ async function findJobs(page, allLinks) {
 
 async function fetchInfo(page, selector) {
   let result;
+
   try {
     if ((await page.$(selector)) === null ) {
         result = 'N/A';
