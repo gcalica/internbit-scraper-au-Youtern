@@ -9,8 +9,8 @@ async function getLinks(page) {
       return [].map.call(u, a => a.href);
     });
     return links;
-  } catch (errl) {
-    console.log("error with get links", errl.message);
+  } catch (error) {
+    console.error("getLinks Error", error.message);
   }
 }
 
@@ -33,16 +33,16 @@ async function getAllLinks(page) {
           next = false;
         }
 
-      } catch (errp) {
-        console.log(errp.message);
-        console.log(allLinks);
+      } catch (error) {
+        console.error('getAllLinks Error %o \n allLinks: %o', error.message, allLinks);
+        console.error(allLinks);
         next = false;
         console.log('\nReached the end of pages!');
       }
     }
     return allLinks;
   }catch (erra) {
-    console.log("error with getting allLinks", erra.message);
+    console.error("error with getting allLinks", erra.message);
   }
 }
 
@@ -163,44 +163,44 @@ async function findJobs(page, allLinks) {
         // loop through the number of nodes
         // for (let i = 0; i < node.length; i++) {
 
-          general.push({
-            position: position,
-            location: location,
-            description: description,
-            compensation: compensation,
-            qualifications: {
-              skills: skills,
-              responsibilities: resp,
-            },
-            company: company,
-            start: start,
-            contact: {
-              employer: name,
-              email: email,
-              phone: phone,
-              website: website,
-            },
-            url: pageLink,
-            lastScraped: new Date(),
-          });
+        general.push({
+          position: position,
+          location: location,
+          description: description,
+          compensation: compensation,
+          qualifications: {
+            skills: skills,
+            responsibilities: resp,
+          },
+          company: company,
+          start: start,
+          contact: {
+            employer: name,
+            email: email,
+            phone: phone,
+            website: website,
+          },
+          url: pageLink,
+          lastScraped: new Date(),
+        });
         // }
 
-            jobsScraped++;
+        jobsScraped++;
         await page.waitFor(4000);
-        console.log("position", position);
-        console.log("location:", location);
-        console.log("Description:", description);
-        console.log("company:", company);
-        console.log("name:", name);
-        console.log("email:", email);
-        console.log("last scraped:", lastScraped);
+        // console.log("position", position);
+        // console.log("location:", location);
+        // console.log("Description:", description);
+        // console.log("company:", company);
+        // console.log("name:", name);
+        // console.log("email:", email);
+        // console.log("last scraped:", lastScraped);
       }
     }
   } catch (e) {
     console.log("Error with getting info off Page: ", e.message);
   }
-  console.log("Total number of jobs scraped: " + jobsScraped);
-  console.log(general);
+  // console.log("Total number of jobs scraped: " + jobsScraped);
+  // console.log(general);
   return general;
 }
 
@@ -209,13 +209,13 @@ async function fetchInfo(page, selector) {
 
   try {
     if ((await page.$(selector)) === null ) {
-        result = 'N/A';
+      result = 'N/A';
     } else {
       await page.waitForSelector(selector);
       result = await page.evaluate((select) => document.querySelector(select).textContent, selector);
     }
   } catch (error) {
-    console.log('Our Error: fetchInfo() failed.\n', error.message);
+    console.error('Our Error: fetchInfo() failed.\n', error.message);
     result = 'Error';
   }
   return result;
@@ -233,13 +233,14 @@ async function write(obj) {
   try {
     let browser = await puppeteer.launch({ headless: false }); // Slow down by 250 ms
     let page = await browser.newPage();
+    // let page2 = await browser.newPage();
     await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&employer_types=IT+%2F+Technology&commit=Search&search%5Bfields_to_search%5D=job_title');
     await page.waitForSelector('article[class=employer-post');
 
     // Scrape information
     try {
       getAllLinks(page).then((allLinks => {
-        console.log(allLinks);
+        console.log('allLinks ', allLinks);
         findJobs(page, allLinks).then((general => {
           write(general);
           // fs.writeFile('./coolworksP.canonical.data.json', JSON.stringify(general, null, 4), 'utf-8', function (err) {
