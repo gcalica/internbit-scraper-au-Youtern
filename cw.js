@@ -73,7 +73,7 @@ async function getAllLinks(page) {
 
 async function getJobPositionInformation(page, pageLink, jobId) {
   try {
-    const position = await fetchInfo(page, `${jobId} h4[class="job-title"]`);
+    const position = await fetchInfo(page, `#${jobId} h4[class="job-title"]`);
     const company = await fetchInfo(page, 'div[class="container"] h1');
 
     // Contact
