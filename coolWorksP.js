@@ -233,7 +233,6 @@ async function write(obj) {
   try {
     let browser = await puppeteer.launch({ headless: false }); // Slow down by 250 ms
     let page = await browser.newPage();
-    // let page2 = await browser.newPage();
     await page.goto('https://www.coolworks.com/search?utf8=%E2%9C%93&search%5Bkeywords%5D=&employer_types=IT+%2F+Technology&commit=Search&search%5Bfields_to_search%5D=job_title');
     await page.waitForSelector('article[class=employer-post');
 
